@@ -1,5 +1,5 @@
-.ac-calendar-container,
-.ac-calendar {
+div.ac-calendar-container,
+div.ac-calendar {
 	background-color: red;
 	color: orangered;
 }
