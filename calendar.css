@@ -7,3 +7,7 @@ div.ac-calendar {
 td.ac-day span {
 	color: lightskyblue;
 }
+
+span.ac-day-split-day {
+	background-color: #f7f;
+}
