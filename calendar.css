@@ -1,13 +1,13 @@
 div.ac-calendar-container,
 div.ac-calendar {
-	background-color: red;
-	color: orangered;
+	background-color: red !important;
+	color: orangered !important;
 }
 
 td.ac-day span {
-	color: lightskyblue;
+	color: lightskyblue !important;
 }
 
 span.ac-day-split-day {
-	background-color: #f7f;
+	background-color: #f7f !important;
 }
