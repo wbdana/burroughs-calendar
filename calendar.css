@@ -3,3 +3,7 @@ div.ac-calendar {
 	background-color: red;
 	color: orangered;
 }
+
+td.ac-day span {
+	color: lightskyblue;
+}
