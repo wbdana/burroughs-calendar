@@ -1,15 +1,17 @@
 html,
 body {
+	overflow: hidden;
 	width: 100%;
 }
 
 div.ac-calendar-container {
-	height: 100%;
+	height: 460px;
 	position: relative;
 	width: 100%;
 }
 
 div.ac-calendar-months {
+	height: 460px;
 	position: absolute;
 	width: 100%;
 	left: 50%;
@@ -21,10 +23,12 @@ div.ac-calendar {
 	/* left: 50%; */
 	/* transform: translateX(-50%); */
 	/* height: 100%; */
+	height: 460px;
 	width: 100%;
 }
 
 table.ac-table {
+	height: 460px !important;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -32,6 +36,19 @@ table.ac-table {
 }
 
 tbody {
+	height: 460px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+tbody tr.ac-heading,
+tbody tr.ac-weekdays {
+	left: 50%;
+	margin-bottom: 
+	position: absolute;
+	transform: translateX(-50%);
 	width: 100%;
 }
 
