@@ -1,24 +1,47 @@
-.ac-calendar-container {
+html,
+body {
+	width: 100%;
+}
+
+div.ac-calendar-container {
 	height: 100%;
 	position: relative;
+	width: 100%;
 }
 
-.ac-calendar-months {
-	position: absolute !important;
-	width: 100% !important;
-	left: 50% !important;
-	transform: translateX(-50%) !important;
+div.ac-calendar-months {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.ac-calendar {
+div.ac-calendar {
+	/* position: absolute; */
+	/* left: 50%; */
+	/* transform: translateX(-50%); */
+	/* height: 100%; */
+	width: 100%;
+}
+
+table.ac-table {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 100%;
+	width: 100% !important;
+}
+
+tbody {
+	width: 100%;
+}
+
+td.ac-day {
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 td.ac-day span.ac-day-split-day,
 td.ac-day span.ac-day-split-bottom.ac-day-split-bottom-ac-grey-out-history,
 td.ac-day span.ac-day-split-top.ac-day-split-top-ac-grey-out-history {
-	font-size: 3rem;
+	font-size: 1.5rem;
 }
