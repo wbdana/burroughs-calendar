@@ -1,13 +1,24 @@
-div.ac-calendar-container,
-div.ac-calendar {
-	background-color: red !important;
-	color: orangered !important;
+.ac-calendar-container {
+	height: 100%;
+	position: relative;
 }
 
-td.ac-day span {
-	color: lightskyblue !important;
+.ac-calendar-months {
+	position: absolute !important;
+	width: 100% !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
 }
 
-span.ac-day-split-day {
-	background-color: #f7f !important;
+.ac-calendar {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+}
+
+td.ac-day span.ac-day-split-day,
+td.ac-day span.ac-day-split-bottom.ac-day-split-bottom-ac-grey-out-history,
+td.ac-day span.ac-day-split-top.ac-day-split-top-ac-grey-out-history {
+	font-size: 3rem;
 }
