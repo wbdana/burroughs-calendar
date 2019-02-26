@@ -46,7 +46,7 @@ tbody {
 tbody tr.ac-heading,
 tbody tr.ac-weekdays {
 	left: 50%;
-	margin-bottom: 
+	margin-bottom: 50px;
 	position: absolute;
 	transform: translateX(-50%);
 	width: 100%;
