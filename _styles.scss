@@ -7,7 +7,7 @@ body {
 }
 
 .ac-calendar-container {
-  height: 600px;
+  height: $iframe-height;
   position: relative;
   width: 100%;
 
@@ -172,19 +172,19 @@ body {
           }
 
           tr:nth-child(4) {
-            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 2);
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 1.5);
           }
 
           tr:nth-child(5) {
-            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 3);
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 2);
           }
 
           tr:nth-child(6) {
-            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 4);
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 2.5);
           }
 
           tr:nth-child(7) {
-            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 5);
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 3);
           }
         }
       }
