@@ -4,61 +4,68 @@ body {
   width: 100%;
 }
 
-div.ac-calendar-container {
+.ac-calendar-container {
   height: 460px;
   position: relative;
   width: 100%;
-}
 
-div.ac-calendar-months {
-  height: 460px;
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  .ac-calendar-months {
+    height: 100%;
+    width: 100%;
 
-div.ac-calendar {
-  /* position: absolute; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
-  /* height: 100%; */
-  height: 460px;
-  width: 100%;
-}
+    .ac-calendar {
+      position: absolute;
+      width: 100%;
 
-table.ac-table {
-  height: 460px !important;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100% !important;
-}
+      table.ac-table {
+        height: 460px !important;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100% !important;
 
-tbody {
-  height: 460px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-}
+        tbody {
+          height: 460px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
 
-tbody tr.ac-heading,
-tbody tr.ac-weekdays {
-  left: 50%;
-  margin-bottom: 50px;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 100%;
-}
+          tr.ac-heading {
+            left: 50%;
+            //margin-bottom: 1rem;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 100%;
 
-td.ac-day {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
+            th.ac-heading {
+              width: 100%;
+            }
+          }
 
-td.ac-day span.ac-day-split-day,
-td.ac-day span.ac-day-split-bottom.ac-day-split-bottom-ac-grey-out-history,
-td.ac-day span.ac-day-split-top.ac-day-split-top-ac-grey-out-history {
-  font-size: 1.5rem;
+          tr.ac-weekdays {
+            left: 50%;
+            //margin-top: 1rem;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 100%;
+          }
+
+          tr {
+
+            td.ac-day {
+              margin-left: 1rem;
+              margin-right: 1rem;
+
+              span.ac-day-split-day,
+              span.ac-day-split-bottom.ac-day-split-bottom-ac-grey-out-history,
+              span.ac-day-split-top.ac-day-split-top-ac-grey-out-history {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
