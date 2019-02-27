@@ -33,7 +33,7 @@ body {
 
           tr.ac-heading {
             left: 50%;
-            //margin-bottom: 1rem;
+            margin-bottom: 2rem;
             position: absolute;
             transform: translateX(-50%);
             width: 100%;
@@ -45,10 +45,14 @@ body {
 
           tr.ac-weekdays {
             left: 50%;
-            //margin-top: 1rem;
+            margin-top: 2rem;
             position: absolute;
             transform: translateX(-50%);
-            width: 100%;
+            //width: 100%;
+
+            td {
+              width: calc((100% / 7) - 1);
+            }
           }
 
           tr {

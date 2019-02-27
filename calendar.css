@@ -27,6 +27,7 @@ body {
           width: 100%; }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-heading {
             left: 50%;
+            margin-bottom: 2rem;
             position: absolute;
             transform: translateX(-50%);
             width: 100%; }
@@ -34,9 +35,11 @@ body {
               width: 100%; }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays {
             left: 50%;
+            margin-top: 2rem;
             position: absolute;
-            transform: translateX(-50%);
-            width: 100%; }
+            transform: translateX(-50%); }
+            .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td {
+              width: calc((100% / 7) - 1); }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day {
             margin-left: 1rem;
             margin-right: 1rem; }
