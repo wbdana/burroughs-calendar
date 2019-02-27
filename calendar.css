@@ -4,7 +4,7 @@ body {
   width: 100%; }
 
 .ac-calendar-container {
-  height: 460px;
+  height: 600px;
   position: relative;
   width: 100%; }
   .ac-calendar-container .ac-calendar-months {
@@ -35,15 +35,39 @@ body {
             .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-heading th.ac-heading {
               width: 100%; }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays {
+            background-color: lightseagreen;
             left: 50%;
             margin-top: 2rem;
             position: absolute;
-            transform: translateX(-50%); }
+            transform: translateX(-50%);
+            width: 100%; }
             .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td {
+              position: absolute;
               width: calc((100% / 7) - 1); }
+            .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td:nth-child(1) {
+              left: 8%;
+              transform: translateX(-8%); }
+            .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td:nth-child(2) {
+              left: 22%;
+              transform: translateX(-22%); }
+            .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td:nth-child(3) {
+              left: 36%;
+              transform: translateX(-36%); }
+            .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td:nth-child(4) {
+              left: 50%;
+              transform: translateX(-50%); }
+            .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td:nth-child(5) {
+              left: 64%;
+              transform: translateX(-64%); }
+            .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td:nth-child(6) {
+              left: 78%;
+              transform: translateX(-78%); }
+            .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr.ac-weekdays td:nth-child(7) {
+              left: 92%;
+              transform: translateX(-92%); }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day {
             position: absolute;
-            margin-top: 3rem;
+            margin-top: 1rem;
             width: calc((100% / 7) - 1); }
             .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day span.ac-day-split-day,
             .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day span.ac-day-split-bottom.ac-day-split-bottom-ac-grey-out-history,
@@ -58,23 +82,33 @@ body {
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.status-1 {
             background-color: red; }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day:nth-child(1) {
-            left: 14%;
-            transform: translateX(-14%); }
+            left: 8%;
+            transform: translateX(-8%); }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day:nth-child(2) {
-            left: 28%;
-            transform: translateX(-28%); }
+            left: 22%;
+            transform: translateX(-22%); }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day:nth-child(3) {
-            left: 42%;
-            transform: translateX(-42%); }
+            left: 36%;
+            transform: translateX(-36%); }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day:nth-child(4) {
             left: 50%;
             transform: translateX(-50%); }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day:nth-child(5) {
-            left: 58%;
-            transform: translateX(-58%); }
+            left: 64%;
+            transform: translateX(-64%); }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day:nth-child(6) {
-            left: 72%;
-            transform: translateX(-72%); }
+            left: 78%;
+            transform: translateX(-78%); }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day:nth-child(7) {
-            left: 86%;
-            transform: translateX(-86%); }
+            left: 92%;
+            transform: translateX(-92%); }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr:nth-child(3) {
+            margin-top: calc(1rem * 1); }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr:nth-child(4) {
+            margin-top: calc(1rem * 2); }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr:nth-child(5) {
+            margin-top: calc(1rem * 3); }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr:nth-child(6) {
+            margin-top: calc(1rem * 4); }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr:nth-child(7) {
+            margin-top: calc(1rem * 5); }

@@ -1,3 +1,5 @@
+@import "variables";
+
 html,
 body {
   overflow: hidden;
@@ -5,7 +7,7 @@ body {
 }
 
 .ac-calendar-container {
-  height: 460px;
+  height: 600px;
   position: relative;
   width: 100%;
 
@@ -32,7 +34,7 @@ body {
           transform: translateX(-50%);
           width: 100%;
 
-          tr.ac-heading {
+          tr.ac-heading {                         // Month selector component
             left: 50%;
             margin-bottom: 2rem;
             position: absolute;
@@ -46,52 +48,60 @@ body {
 
           tr.ac-weekdays {                        // Day of week labels
             background-color: lightseagreen;
+            //height: 100%;
             left: 50%;
             margin-top: 2rem;
-            position: relative;
+            position: absolute;
             transform: translateX(-50%);
+            width: 100%;
 
             td {
               position: absolute;
               width: calc((100% / 7) - 1);
-            }
-
-            td:nth-child(1) {                     // Sunday
 
             }
 
-            td:nth-child(2) {                     // Monday
-
+            td:nth-child(1) {                     // Sunday header
+              left: $sunday-position;
+              transform: translateX(-$sunday-position);
             }
 
-            td:nth-child(3) {                     // Tuesday
-
+            td:nth-child(2) {                     // Monday header
+              left: $monday-position;
+              transform: translateX(-$monday-position);
             }
 
-            td:nth-child(4) {                     // Wednesday
-              background-color: aqua;
+            td:nth-child(3) {                     // Tuesday header
+              left: $tuesday-position;
+              transform: translateX(-$tuesday-position);
             }
 
-            td:nth-child(5) {                     // Thursday
-
+            td:nth-child(4) {                     // Wednesday header
+              left: $wednesday-position;
+              transform: translateX(-$wednesday-position);
             }
 
-            td:nth-child(6) {                     // Friday
-
+            td:nth-child(5) {                     // Thursday header
+              left: $thursday-position;
+              transform: translateX(-$thursday-position);
             }
 
-            td:nth-child(7) {                     // Saturday
+            td:nth-child(6) {                     // Friday header
+              left: $friday-position;
+              transform: translateX(-$friday-position);
+            }
 
+            td:nth-child(7) {                     // Saturday header
+              left: $saturday-position;
+              transform: translateX(-$saturday-position);
             }
           }
 
           tr {
 
             td.ac-day {                           // Day in month blocks
-              //margin-left: 1rem;
-              //margin-right: 1rem;
               position: absolute;
-              margin-top: 4rem;
+              margin-top: $day-in-row-margin-top-multiplier;
               width: calc((100% / 7) - 1);
 
               span.ac-day-split-day,
@@ -103,7 +113,6 @@ body {
 
             td.status-ac-grey-out-history {       // Past dates
               background-color: blue;
-              //padding: 2rem;
             }
 
             td.ac-day-today {                     // Today
@@ -118,40 +127,64 @@ body {
               background-color: red;              // Reserved
             }
 
-            td.ac-day:nth-child(1) {
-              left: 14%;
-              transform: translateX(-14%);
+            td.ac-day:nth-child(1) {                            // Sunday day in month
+              left: #{$sunday-position};
+              transform: translateX(-#{$sunday-position});
             }
 
-            td.ac-day:nth-child(2) {
-              left: 28%;
-              transform: translateX(-28%);
+            td.ac-day:nth-child(2) {                            // Monday day in month
+              left: #{$monday-position};
+              transform: translateX(-#{$monday-position});
             }
 
-            td.ac-day:nth-child(3) {
-              left: 42%;
-              transform: translateX(-42%);
+            td.ac-day:nth-child(3) {                            // Tuesday day in month
+              left: #{$tuesday-position};
+              transform: translateX(-#{$tuesday-position});
             }
 
-            td.ac-day:nth-child(4) {
-              left: 50%;
-              transform: translateX(-50%);
+            td.ac-day:nth-child(4) {                            // Wednesday day in month
+              left: $wednesday-position;
+              transform: translateX(-$wednesday-position);
             }
 
-            td.ac-day:nth-child(5) {
-              left: 58%;
-              transform: translateX(-58%);
+            td.ac-day:nth-child(5) {                            // Thursday day in month
+              left: $thursday-position;
+              transform: translateX(-$thursday-position);
             }
 
-            td.ac-day:nth-child(6) {
-              left: 72%;
-              transform: translateX(-72%);
+            td.ac-day:nth-child(6) {                            // Friday day in month
+              left: $friday-position;
+              transform: translateX(-$friday-position);
             }
 
-            td.ac-day:nth-child(7) {
-              left: 86%;
-              transform: translateX(-86%);
+            td.ac-day:nth-child(7) {                            // Saturday day in month
+              left: $saturday-position;
+              transform: translateX(-$saturday-position);
             }
+          }
+
+          //&:not(:nth-child(-n + 2)) {               // Applies to all but first two <tr /> (month selector component and day of week header)
+          //
+          //}
+
+          tr:nth-child(3) {
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 1);
+          }
+
+          tr:nth-child(4) {
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 2);
+          }
+
+          tr:nth-child(5) {
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 3);
+          }
+
+          tr:nth-child(6) {
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 4);
+          }
+
+          tr:nth-child(7) {
+            margin-top: calc(#{$day-in-row-margin-top-multiplier} * 5);
           }
         }
       }
