@@ -1,6 +1,8 @@
-$iframe-height: 800px;
+$iframe-height: 850px;
 $gutter-horizontal: 1rem;
-$day-in-row-margin-top-multiplier: 3rem;
+$day-in-row-margin-top: 3rem;
+$gutter-vertical: 1.5rem;
+$day-in-month-padding: 2rem;
 
 $sunday-position: 8%;
 $monday-position: 22%;
@@ -9,3 +11,8 @@ $wednesday-position: 50%;
 $thursday-position: 64%;
 $friday-position: 78%;
 $saturday-position: 92%;
+
+
+@media screen and (max-width: 720px) {
+  $day-in-month-padding: 1rem;
+}
