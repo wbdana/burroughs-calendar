@@ -49,6 +49,14 @@ body {
             .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day span.ac-day-split-bottom.ac-day-split-bottom-ac-grey-out-history,
             .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day span.ac-day-split-top.ac-day-split-top-ac-grey-out-history {
               font-size: 1.5rem; }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.status-ac-grey-out-history {
+            background-color: blue; }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day-today {
+            background-color: orangered; }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.status-default {
+            background-color: green; }
+          .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.status-1 {
+            background-color: red; }
           .ac-calendar-container .ac-calendar-months .ac-calendar table.ac-table tbody tr td.ac-day:nth-child(1) {
             left: 14%;
             transform: translateX(-14%); }

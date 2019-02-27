@@ -1,0 +1,160 @@
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+}
+
+.ac-calendar-container {
+  height: 460px;
+  position: relative;
+  width: 100%;
+
+  .ac-calendar-months {
+    height: 100%;
+    width: 100%;
+
+    .ac-calendar {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+
+      table.ac-table {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100% !important;
+
+        tbody {
+          height: 100%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+
+          tr.ac-heading {
+            left: 50%;
+            margin-bottom: 2rem;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 100%;
+
+            th.ac-heading {
+              width: 100%;
+            }
+          }
+
+          tr.ac-weekdays {                        // Day of week labels
+            background-color: lightseagreen;
+            left: 50%;
+            margin-top: 2rem;
+            position: relative;
+            transform: translateX(-50%);
+
+            td {
+              position: absolute;
+              width: calc((100% / 7) - 1);
+            }
+
+            td:nth-child(1) {                     // Sunday
+
+            }
+
+            td:nth-child(2) {                     // Monday
+
+            }
+
+            td:nth-child(3) {                     // Tuesday
+
+            }
+
+            td:nth-child(4) {                     // Wednesday
+              background-color: aqua;
+            }
+
+            td:nth-child(5) {                     // Thursday
+
+            }
+
+            td:nth-child(6) {                     // Friday
+
+            }
+
+            td:nth-child(7) {                     // Saturday
+
+            }
+          }
+
+          tr {
+
+            td.ac-day {                           // Day in month blocks
+              //margin-left: 1rem;
+              //margin-right: 1rem;
+              position: absolute;
+              margin-top: 4rem;
+              width: calc((100% / 7) - 1);
+
+              span.ac-day-split-day,
+              span.ac-day-split-bottom.ac-day-split-bottom-ac-grey-out-history,
+              span.ac-day-split-top.ac-day-split-top-ac-grey-out-history {
+                font-size: 1.5rem;
+              }
+            }
+
+            td.status-ac-grey-out-history {       // Past dates
+              background-color: blue;
+              //padding: 2rem;
+            }
+
+            td.ac-day-today {                     // Today
+              background-color: orangered;
+            }
+
+            td.status-default {                   // Available
+              background-color: green;
+            }
+
+            td.status-1 {
+              background-color: red;              // Reserved
+            }
+
+            td.ac-day:nth-child(1) {
+              left: 14%;
+              transform: translateX(-14%);
+            }
+
+            td.ac-day:nth-child(2) {
+              left: 28%;
+              transform: translateX(-28%);
+            }
+
+            td.ac-day:nth-child(3) {
+              left: 42%;
+              transform: translateX(-42%);
+            }
+
+            td.ac-day:nth-child(4) {
+              left: 50%;
+              transform: translateX(-50%);
+            }
+
+            td.ac-day:nth-child(5) {
+              left: 58%;
+              transform: translateX(-58%);
+            }
+
+            td.ac-day:nth-child(6) {
+              left: 72%;
+              transform: translateX(-72%);
+            }
+
+            td.ac-day:nth-child(7) {
+              left: 86%;
+              transform: translateX(-86%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
