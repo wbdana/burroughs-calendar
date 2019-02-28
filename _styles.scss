@@ -99,7 +99,6 @@ body {
           }
 
           tr {
-            //outline-offset: $day-in-row-margin-top + $day-in-month-padding + .2rem;
 
             .ac-pad {                           // Greyed out past month day in month blocks
               //background-color: cornflowerblue;
@@ -226,6 +225,30 @@ body {
           tr:nth-child(8) {
             //border-bottom: 2px solid black;
             margin-top: $day-in-row-margin-top + $day-in-month-padding;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .ac-calendar-container {
+
+    .ac-calendar-months {
+
+      .ac-calendar {
+
+        .ac-table {
+
+          tbody {
+
+            tr {
+
+              .ac-day {
+                padding: $day-in-month-padding-mobile;
+              }
+            }
           }
         }
       }

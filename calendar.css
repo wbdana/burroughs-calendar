@@ -135,3 +135,7 @@ body {
             margin-top: 5rem; }
           .ac-calendar-container .ac-calendar-months .ac-calendar .ac-table tbody tr:nth-child(8) {
             margin-top: 5rem; }
+
+@media screen and (max-width: 720px) {
+  .ac-calendar-container .ac-calendar-months .ac-calendar .ac-table tbody tr .ac-day {
+    padding: 1rem; } }
