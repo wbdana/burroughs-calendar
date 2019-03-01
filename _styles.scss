@@ -101,7 +101,7 @@ body {
           tr {
 
             .ac-pad {                           // Greyed out past month day in month blocks
-              //background-color: cornflowerblue;
+              //background-color: grey;         // TODO WBD Fix these
               display: none;
             }
 
@@ -134,7 +134,7 @@ body {
             }
 
             .ac-day-today {                     // Today
-              //background-color: orangered;
+
             }
 
             .status-default {                   // Available
@@ -191,39 +191,27 @@ body {
             }
           }
 
-          //tr:not(:nth-child(n + 2)) {
-          //  border-bottom: 2px solid black;
-          //}
-
           tr:nth-child(3) {                           // First calendar day row
-            //border-bottom: 1px solid black;
             margin-top: $day-in-row-margin-top;
-            //outline: 1px solid black;
           }
 
           tr:nth-child(4) {                           // Second calendar day row
-            //border-top: 1px solid black;
             margin-top: $day-in-row-margin-top + $day-in-month-padding;
-            //outline: 1px solid black;
           }
 
           tr:nth-child(5) {                           // Third calendar day row
-            //border-bottom: 2px solid black;
             margin-top: $day-in-row-margin-top + $day-in-month-padding;
           }
 
           tr:nth-child(6) {                           // Fourth calendar day row
-            //border-bottom: 2px solid black;
             margin-top: $day-in-row-margin-top + $day-in-month-padding;
           }
 
           tr:nth-child(7) {
-            //border-bottom: 2px solid black;
             margin-top: $day-in-row-margin-top + $day-in-month-padding;
           }
 
           tr:nth-child(8) {
-            //border-bottom: 2px solid black;
             margin-top: $day-in-row-margin-top + $day-in-month-padding;
           }
         }
