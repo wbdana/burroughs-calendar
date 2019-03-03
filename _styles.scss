@@ -21,6 +21,7 @@ body {
       width: 100%;
 
       .ac-table {
+        background-color: $color-off-white;
         height: 100%;
         position: absolute;
         left: 50%;
@@ -43,13 +44,14 @@ body {
             width: 100%;
 
             th.ac-heading {
+              background-color: $color-off-white;
               border: 0;
               width: 100%;
             }
           }
 
           tr.ac-weekdays {                        // Day of week labels
-            background-color: #4d4d4d;
+            background-color: $color-light-grey;
             border: 0;
             left: 50%;
             margin-top: 2rem;
@@ -99,6 +101,7 @@ body {
           }
 
           tr {
+            //outline-offset: 2rem;
 
             .ac-pad {                           // Greyed out past month day in month blocks
               //background-color: grey;         // TODO WBD Fix these
@@ -107,11 +110,17 @@ body {
 
             .ac-pad,                            // Greyed out past month day in month blocks
             .ac-day {                           // Day in month blocks
+              border: .2rem solid $color-black;
               padding: $day-in-month-padding;                      // Size of day in month block
               position: absolute;
               margin-top: $day-in-row-margin-top;
               width: calc((100% / 7) - 1);
               transition: all .2s ease;
+
+              &:hover {
+                border: .1rem solid $color-dark-grey;
+                transform: translateY(-3px) scale(1.05);
+              }
 
               .ac-day-split-day,
               .ac-day-split-bottom.ac-day-split-bottom-ac-grey-out-history,
@@ -125,11 +134,11 @@ body {
             }
 
             .status-ac-grey-out-history {       // Past dates
-              background-color: #979797;
+              background-color: $color-light-grey;
               transition: all .2s ease;
 
               &:hover {
-                background-color: #636363;
+                background-color: $color-dark-grey;
               }
             }
 
@@ -138,20 +147,20 @@ body {
             }
 
             .status-default {                   // Available
-              background-color: #54764e;
+              background-color: $color-light-green;
               transition: all .2s ease;
 
               &:hover {
-                background-color: #0d520a;
+                background-color: $color-dark-green;
               }
             }
 
             .status-1 {
-              background-color: #b16365;              // Reserved
+              background-color: $color-light-red;              // Reserved
               transition: all .2s ease;
 
               &:hover {
-                background-color: #8c0f0d;
+                background-color: $color-dark-red;
               }
             }
 
